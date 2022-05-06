@@ -17,15 +17,15 @@ if(Choice=="1"):
     print("2.Vodacom User")
     user= input("select user:\n")
     
-    if(user==1):
+    if(user=="1"):
         print("MTN user")
-        number=input("Enter phone number:\n")
-        if(number=="phone number"):
+        number=input("Enter phonenumber:\n")
+        if(number==phonenumber):
             amount=input("Enter amount to send?\n")
             if(float(amount )>float(Amount)):
                 print("insufficient fund, rechard and continue sending")
             else:
-                print(float(amount), "semd amount sucessful to number",phonenumber)    
+                print(float(amount), "send amount sucessful to number",phonenumber)    
 
         else:
             print("invald input")
